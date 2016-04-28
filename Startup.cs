@@ -36,8 +36,6 @@ namespace Nora5
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-            app.UseIISPlatformHandler();
-
             app.UseStaticFiles();
 
             app.UseMvc();
